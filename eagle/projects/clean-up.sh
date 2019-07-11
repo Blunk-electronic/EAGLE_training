@@ -1,4 +1,5 @@
 #! /bin/bash
+rm *~
 rm *.csv
 rm bom/*.csv
 rm *.scr
