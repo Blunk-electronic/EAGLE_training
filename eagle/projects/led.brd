@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -132,6 +132,8 @@
 <wire x1="40" y1="0" x2="40" y2="30" width="0" layer="20"/>
 <wire x1="40" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="30" x2="40" y2="30" x3="20" y3="34" textsize="1" textratio="13" layer="47"/>
+<dimension x1="40" y1="30" x2="40" y2="0" x3="46" y3="15" textsize="1" textratio="13" layer="47"/>
 </plain>
 <libraries>
 <library name="be_opt">
@@ -215,6 +217,91 @@ drawn: Mario Blunk / Blunk electronic</description>
 <wire x1="-1.25" y1="-4.5" x2="-1.25" y2="-2.5" width="0.15" layer="51"/>
 <wire x1="-1.25" y1="-2.5" x2="-0.75" y2="-3" width="0.15" layer="51"/>
 <wire x1="-1.25" y1="-2.5" x2="-1.75" y2="-3" width="0.15" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="be_frame">
+<description>drawing frames&lt;br&gt;
+already implemented global placeholders : project, drawn, checked, approved</description>
+<packages>
+<package name="A4_LANDSCAPE">
+<description>edited: Mario Blunk&lt;br&gt;
+date: 2014-10-15</description>
+<text x="152.5" y="5" size="2" layer="48" font="vector">&gt;DRAWING_NAME</text>
+<text x="152.5" y="19" size="2" layer="48" font="vector">&gt;STATUS</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="48"/>
+<wire x1="256.5" y1="33" x2="246.46" y2="33" width="0.1" layer="48"/>
+<wire x1="246.46" y1="33" x2="236.46" y2="33" width="0.1" layer="48"/>
+<wire x1="236.46" y1="33" x2="226.46" y2="33" width="0.1" layer="48"/>
+<wire x1="226.46" y1="33" x2="215.46" y2="33" width="0.1" layer="48"/>
+<wire x1="215.46" y1="33" x2="204.46" y2="33" width="0.1" layer="48"/>
+<wire x1="204.46" y1="33" x2="150.3" y2="33" width="0.1" layer="48"/>
+<wire x1="150.3" y1="33" x2="136.3" y2="33" width="0.1" layer="48"/>
+<wire x1="136.3" y1="33" x2="136.3" y2="26" width="0.1" layer="48"/>
+<wire x1="136.3" y1="26" x2="136.3" y2="22" width="0.1" layer="48"/>
+<wire x1="136.3" y1="22" x2="136.3" y2="18" width="0.1" layer="48"/>
+<wire x1="136.3" y1="18" x2="136.3" y2="9" width="0.1" layer="48"/>
+<wire x1="136.3" y1="9" x2="136.3" y2="3.85" width="0.1" layer="48"/>
+<wire x1="256.5" y1="26" x2="246.46" y2="26" width="0.1" layer="48"/>
+<wire x1="246.46" y1="26" x2="236.46" y2="26" width="0.1" layer="48"/>
+<wire x1="236.46" y1="26" x2="226.46" y2="26" width="0.1" layer="48"/>
+<wire x1="226.46" y1="26" x2="215.46" y2="26" width="0.1" layer="48"/>
+<wire x1="215.46" y1="26" x2="204.46" y2="26" width="0.1" layer="48"/>
+<wire x1="204.46" y1="26" x2="136.3" y2="26" width="0.1" layer="48"/>
+<wire x1="256.5" y1="22" x2="136.3" y2="22" width="0.1" layer="48"/>
+<wire x1="256.5" y1="18" x2="136.3" y2="18" width="0.1" layer="48"/>
+<wire x1="256.5" y1="9" x2="136.3" y2="9" width="0.1" layer="48"/>
+<wire x1="150.3" y1="33" x2="150.3" y2="3.85" width="0.1" layer="48"/>
+<text x="205" y="30.5" size="1.25" layer="48" font="vector">Size:</text>
+<text x="210" y="27" size="2.5" layer="48" font="vector" align="bottom-center">A4</text>
+<text x="152.5" y="30.5" size="1.25" layer="48" font="vector">Drawing Number:</text>
+<text x="137" y="23" size="1.25" layer="48" font="vector">Project:</text>
+<text x="137" y="10" size="1.25" layer="48" font="vector">Description:</text>
+<text x="137" y="5" size="1.25" layer="48" font="vector">Filename:</text>
+<text x="205" y="19" size="1.25" layer="48" font="vector">Checked:</text>
+<text x="137" y="19" size="1.25" layer="48" font="vector">Status:</text>
+<wire x1="204.46" y1="26" x2="204.46" y2="14" width="0.1" layer="48"/>
+<wire x1="204.46" y1="14" x2="204.46" y2="3.85" width="0.1" layer="48"/>
+<wire x1="215.46" y1="26" x2="215.46" y2="14" width="0.1" layer="48"/>
+<text x="152.5" y="23" size="2" layer="48" font="vector">&gt;PROJECT</text>
+<text x="216" y="19" size="1.25" layer="48" font="vector">&gt;CHECKED</text>
+<text x="152.5" y="34" size="1.25" layer="48" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="137.5" y="34" size="1.25" layer="48" font="vector">last update:</text>
+<wire x1="215.46" y1="14" x2="215.46" y2="9.35" width="0.1" layer="48"/>
+<wire x1="215.46" y1="14" x2="204.46" y2="14" width="0.1" layer="48"/>
+<wire x1="256.5" y1="14" x2="215.46" y2="14" width="0.1" layer="48"/>
+<text x="205" y="15" size="1.25" layer="48" font="vector">Approved:</text>
+<text x="216" y="15" size="1.25" layer="48" font="vector">&gt;APPROVED</text>
+<text x="216" y="23" size="1.25" layer="48" font="vector">&gt;DRAWN</text>
+<text x="205" y="23" size="1.25" layer="48" font="vector">Drawn:</text>
+<wire x1="204.46" y1="33" x2="204.46" y2="26" width="0.1" layer="48"/>
+<wire x1="215.46" y1="33" x2="215.46" y2="26" width="0.1" layer="48"/>
+<wire x1="226.46" y1="33" x2="226.46" y2="26" width="0.1" layer="48"/>
+<wire x1="236.46" y1="33" x2="236.46" y2="26" width="0.1" layer="48"/>
+<wire x1="246.46" y1="33" x2="246.46" y2="26" width="0.1" layer="48"/>
+<text x="216" y="30.5" size="1.25" layer="48" font="vector">Scale:</text>
+<text x="221" y="27" size="1.25" layer="48" font="vector" align="bottom-center">not to
+scale</text>
+<text x="227" y="30.5" size="1.25" layer="48" font="vector">Units:</text>
+<text x="231.5" y="27" size="2.5" layer="48" font="vector" align="bottom-center">mm</text>
+<text x="152.5" y="16" size="1" layer="1" font="vector">Cu Layer 1 (top)</text>
+<text x="152.5" y="16" size="1" layer="16" font="vector">Cu Layer 16 (bot)</text>
+<text x="182.5" y="14" size="1" layer="46" font="vector">plated millings</text>
+<text x="152.5" y="14" size="1" layer="27" font="vector">values top</text>
+<text x="152.5" y="14" size="1" layer="28" font="vector">values bottom</text>
+<text x="152.5" y="12" size="1" layer="25" font="vector">silk screen top</text>
+<text x="182.5" y="10" size="1" layer="29" font="vector">stop mask top</text>
+<text x="182.5" y="10" size="1" layer="30" font="vector">stop mask bottom</text>
+<text x="152.5" y="10" size="1" layer="32" font="vector">cream mask bottom</text>
+<text x="152.5" y="10" size="1" layer="31" font="vector">cream mask top</text>
+<text x="182.5" y="10" size="1" layer="120" font="vector">placement notes</text>
+<text x="182.5" y="12" size="1" layer="44" font="vector">plated drills</text>
+<text x="152.5" y="16" size="1" layer="47" font="vector">measures</text>
+<text x="152.5" y="10" size="1" layer="52" font="vector">doc. bot</text>
+<text x="152.5" y="10" size="1" layer="51" font="vector">doc. top</text>
+<text x="182.5" y="16" size="1" layer="45" font="vector">non-plated drills</text>
+<text x="152.5" y="12" size="1" layer="26" font="vector">silk screen bottom</text>
+<text x="152.5" y="27" size="2" layer="48" font="vector">&gt;DRAWING_NUMBER</text>
 </package>
 </packages>
 </library>
@@ -454,6 +541,15 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterplatten-anfragefo
 <attribute name="PART_CODE_EXT" value="" x="18" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="UPDATED" value="" x="18" y="33" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
+<element name="R2" library="be_rcl" package="S_0805" value="330" x="28" y="18" rot="MR0">
+<attribute name="PART_CODE_EXT" value="" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="UPDATED" value="" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="COMMISSIONED" value="2013-08-30" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_330" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="BOM" value="YES" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+<attribute name="FUNCTION" value="" x="28" y="18" size="1" layer="28" font="vector" ratio="13" rot="MR0" display="off"/>
+</element>
+<element name="U$1" library="be_frame" package="A4_LANDSCAPE" value="" x="-71" y="-74"/>
 </elements>
 <signals>
 <signal name="PWR_IN">
@@ -475,7 +571,6 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterplatten-anfragefo
 <via x="16" y="20" extent="2-16" drill="0.3"/>
 <via x="18" y="20" extent="15-16" drill="0.3"/>
 <wire x1="16" y1="22" x2="16" y2="24" width="0.15" layer="15"/>
-<wire x1="16" y1="24" x2="18" y2="20" width="0" layer="19" extent="1-16"/>
 <via x="16" y="24" extent="2-15" drill="0.3"/>
 </signal>
 <signal name="LED_A">
@@ -483,16 +578,41 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterplatten-anfragefo
 <contactref element="LED1" pad="A"/>
 <wire x1="23.71" y1="18.05" x2="23.71" y2="8.31" width="0.1524" layer="1"/>
 <wire x1="23.71" y1="8.31" x2="23.54" y2="8.14" width="0.1524" layer="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="28.95" y1="18" x2="28.95" y2="20.05" width="0.15" layer="16"/>
+<wire x1="28.95" y1="20.05" x2="28" y2="21" width="0.15" layer="16"/>
+<wire x1="28" y1="21" x2="25" y2="21" width="0.15" layer="16"/>
+<wire x1="25" y1="21" x2="24" y2="20" width="0.15" layer="16"/>
+<wire x1="24" y1="20" x2="23" y2="20" width="0.15" layer="16"/>
+<wire x1="23.71" y1="18.05" x2="23.71" y2="19.29" width="0.15" layer="1"/>
+<wire x1="23.71" y1="19.29" x2="23" y2="20" width="0.15" layer="1"/>
+<via x="23" y="20" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="GND">
 <contactref element="LED1" pad="C"/>
 <contactref element="X1" pad="1"/>
 <wire x1="10.4" y1="15.24" x2="10.4" y2="10.2" width="0.1524" layer="1"/>
 <wire x1="10.4" y1="10.2" x2="12.4" y2="8.2" width="0.1524" layer="1"/>
-<wire x1="12.4" y1="8.2" x2="21.38" y2="8.2" width="0.1524" layer="1"/>
+<wire x1="12.4" y1="8.2" x2="18.523384375" y2="8.2" width="0.1524" layer="1"/>
+<wire x1="18.523384375" y1="8.2" x2="21.38" y2="8.2" width="0.1524" layer="1"/>
 <wire x1="21.38" y1="8.2" x2="21.44" y2="8.14" width="0.1524" layer="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="27.05" y1="18" x2="27" y2="18" width="0.15" layer="16"/>
+<wire x1="27" y1="18" x2="27" y2="14" width="0.15" layer="16"/>
+<wire x1="27" y1="14" x2="26" y2="13" width="0.15" layer="16"/>
+<wire x1="26" y1="13" x2="22" y2="13" width="0.15" layer="16"/>
+<wire x1="18.523384375" y1="8.2" x2="18.523384375" y2="11.523384375" width="0.15" layer="1"/>
+<wire x1="18.523384375" y1="11.523384375" x2="20" y2="13" width="0.15" layer="1"/>
+<wire x1="20" y1="13" x2="22" y2="13" width="0.15" layer="1"/>
+<via x="22" y="13" extent="1-16" drill="0.3"/>
 </signal>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

@@ -1,5 +1,9 @@
 *.s#?
 *.b#?
+*.log
+*.em?
+*.ipc
+*.csv
 eagle.epf
 eagle.rc
 #eagle.epf.in

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -889,6 +889,10 @@ date: 2014-10-14</description>
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_330"/>
 </part>
 <part name="GND2" library="be_supply" deviceset="GND" device=""/>
+<part name="R2" library="be_rcl" deviceset="R" device="_S_0805" value="330">
+<attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_330"/>
+</part>
+<part name="GND3" library="be_supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -920,6 +924,13 @@ date: 2014-10-14</description>
 <instance part="GND2" gate="1" x="177.8" y="43.18" smashed="yes">
 <attribute name="VALUE" x="176.022" y="41.275" size="1.27" layer="96" font="fixed"/>
 </instance>
+<instance part="R2" gate="G$1" x="205.74" y="68.58" smashed="yes">
+<attribute name="NAME" x="203.2" y="72.39" size="1.27" layer="95" font="fixed"/>
+<attribute name="VALUE" x="203.2" y="70.485" size="1.27" layer="96" font="fixed"/>
+</instance>
+<instance part="GND3" gate="1" x="213.36" y="43.18" smashed="yes">
+<attribute name="VALUE" x="211.582" y="41.275" size="1.27" layer="96" font="fixed"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -937,6 +948,9 @@ date: 2014-10-14</description>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="190.5" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="68.58" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
+<junction x="195.58" y="68.58"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -950,6 +964,12 @@ date: 2014-10-14</description>
 <wire x1="167.64" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="66.04" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="68.58" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 </nets>
