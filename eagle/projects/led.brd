@@ -531,6 +531,7 @@ Enquiry: &lt;a href=&quot;http://www.jlp.de/files/jenaer_leiterplatten-anfragefo
 <attribute name="PART_CODE_EXT" value="" x="38" y="-1" size="1.778" layer="27" display="off"/>
 <attribute name="UPDATED" value="" x="38" y="-1" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="20.76" y="14.05" size="1" layer="27" font="vector" ratio="13"/>
+<attribute name="TRM" value="0.123" x="22.76" y="18.05" size="1" layer="27" font="vector" ratio="13" display="off"/>
 </element>
 <element name="X1" library="be_con_jump" package="T_WIRE_CLAMP_1X2_PITCH_2MM5" value="CLAMP_1X2-T-2.5MM" x="10.38" y="16.49" smashed="yes" rot="R90">
 <attribute name="BOM" value="YES" x="18" y="33" size="1.778" layer="27" rot="R90" display="off"/>

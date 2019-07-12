@@ -887,6 +887,7 @@ date: 2014-10-14</description>
 </part>
 <part name="R1" library="be_rcl" deviceset="R" device="_S_0805" value="330">
 <attribute name="PART_CODE_BEL" value="R_PAC_S_0805_VAL_330"/>
+<attribute name="TRM" value="0.123"/>
 </part>
 <part name="GND2" library="be_supply" deviceset="GND" device=""/>
 <part name="R2" library="be_rcl" deviceset="R" device="_S_0805" value="330">
@@ -920,6 +921,7 @@ date: 2014-10-14</description>
 <instance part="R1" gate="G$1" x="185.42" y="68.58" smashed="yes">
 <attribute name="NAME" x="182.88" y="72.39" size="1.27" layer="95" font="fixed"/>
 <attribute name="VALUE" x="182.88" y="70.485" size="1.27" layer="96" font="fixed"/>
+<attribute name="TRM" x="185.42" y="68.58" size="1.27" layer="96" font="fixed" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="177.8" y="43.18" smashed="yes">
 <attribute name="VALUE" x="176.022" y="41.275" size="1.27" layer="96" font="fixed"/>
