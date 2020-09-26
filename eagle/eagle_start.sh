@@ -48,12 +48,8 @@ sed -i -e "s%\(^.*Directories.Cam.*=\).*$%\1 \"${DFLT_CAM_PATH}\"%" ${EAGLERC}
 sed -i -e "s%\(^.*Directories.Dru.*=\).*$%\1 \"${DFLT_DRU_PATH}\"%" ${EAGLERC}
 sed -i -e "s%\(^.*Option\.AutoSetRouteWidthAndDrill.*=\).*$%\1 \"1\"%" ${EAGLERC}
 
-# copy and set the project default file in all EPF folders
-for epfdir in ${DFLT_EPF_PATH//:/ }; do
-	if [ ! -f ${epfdir}/${EAGLEEPF} ]; then
-		cp -f ${EAGLEEPF}.in ${epfdir}/${EAGLEEPF}
-	fi
-done
+# create a clean epf file
+cp ${EAGLEEPF}.in ${EAGLEEPF}
 
 echo "CALL:$(basename $0):$LINENO: ${EAGLEBIN} -U ${EAGLERC} ${@}"
 exec ${EAGLEBIN} -U ${EAGLERC} ${@}
